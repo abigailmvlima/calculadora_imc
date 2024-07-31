@@ -34,34 +34,54 @@ class _HomeState extends State<Home> {
         ],
       ),
       backgroundColor: Colors.white,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const Icon(Icons.person_outlined, size: 120.0, color: Colors.green),
-          const TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: "Peso (kg)",
-              labelStyle: TextStyle(color: Colors.green),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Icon(Icons.person_outlined, size: 120.0, color: Colors.green),
+            const TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Peso (kg)",
+                labelStyle: TextStyle(color: Colors.green),
+              ),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.green, fontSize: 25.0),
             ),
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.green, fontSize: 25.0),
-          ),
-          const TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: "Altura (cm)",
-              labelStyle: TextStyle(color: Colors.green),
+            const TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Altura (cm)",
+                labelStyle: TextStyle(color: Colors.green),
+              ),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.green, fontSize: 25.0),
             ),
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.green, fontSize: 25.0),
-          ),
-          SizedBox(
-            height: 50.0,
-            child: ElevatedButton(onPressed: () {}, child: const Text("Calcular"),)
-          )
-        ],
-      ),
+            Padding(
+                padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
+                child: SizedBox(
+                  height: 50.0,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      "Calcular",
+                      style: TextStyle(color: Colors.white, fontSize: 25.0),
+                    ),
+                  ),
+                ),
+            ),
+            const Text("Info", textAlign: TextAlign.center, style: TextStyle(color: Colors.green, fontSize: 25.0),
+            ),
+          ],
+        ),
+      )
     );
   }
 }
