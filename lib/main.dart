@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -33,11 +34,11 @@ class _HomeState extends State<Home> {
         ],
       ),
       backgroundColor: Colors.white,
-      body: const Column(
+      body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Icon(Icons.person_outlined, size: 120.0, color: Colors.green),
-          TextField(
+          const Icon(Icons.person_outlined, size: 120.0, color: Colors.green),
+          const TextField(
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
               labelText: "Peso (kg)",
@@ -46,7 +47,7 @@ class _HomeState extends State<Home> {
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.green, fontSize: 25.0),
           ),
-          TextField(
+          const TextField(
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
               labelText: "Altura (cm)",
@@ -55,6 +56,10 @@ class _HomeState extends State<Home> {
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.green, fontSize: 25.0),
           ),
+          SizedBox(
+            height: 50.0,
+            child: ElevatedButton(onPressed: () {}, child: const Text("Calcular"),)
+          )
         ],
       ),
     );
