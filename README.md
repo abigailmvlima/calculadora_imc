@@ -1,16 +1,9 @@
-# calculadora_imc
+# Calculadora IMC
 
-A new Flutter project.
+Projeto Flutter para calcular o IMC.
 
-## Getting Started
+![tela1](https://github.com/user-attachments/assets/1c5234eb-63e8-4c14-ae2f-9676403fda20)
 
-This project is a starting point for a Flutter application.
+![tela2](https://github.com/user-attachments/assets/93e3f9c5-9969-464f-ae4d-c7d9cea8cdb9)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![tela3](https://github.com/user-attachments/assets/16aec86a-8686-4d04-baae-7addca6e9a7c)
